@@ -89,13 +89,19 @@
     <p><strong>Q2. Which animal do you connect with most?</strong>
     <div class="row">
         <div class="col-25">
-            <select id="animal" name="animal">
-                <option>Select an Animal</option>
+            <label for="animalType" class="form-label">Select an animal type</label>
+            <select id="animalType" name="animalType">
+                <option value="" disabled selected>Select an Animal</option>
                 <option value="dog">Dog</option>
-                <option value="eagle">Eagle</option>
+                <option value="bird">Bird</option>
                 <option value="bear">Bear</option>
-                <option value="cheetah">Cheetah</option>
-                <option value="octopus">Octopus</option>
+                <option value="cat">Cat</option>
+                <option value="insect">Insect</option>
+            </select>
+            <hr />
+            <label for="animal" class="form-label">Animal</label>
+            <select id="animal" class="form-select" type="select" name="animal" disabled>
+                <option>&#x1F446 Choose an animal type first</option>
             </select>
         </div>
     </div>
@@ -107,7 +113,7 @@
     <br>
 
     <!-- Question 4 -->
-    <p><strong>Q4. Which combination of super powers best describes your personality?</strong></p>
+    <p><strong>Q4. Which combination of super powers best describes your personality? (3 choices max)</strong></p>
     <label>
         <input type="checkbox" name="superpower" value="flight">Flight
     </label>
@@ -137,16 +143,20 @@
     </label>
     <br>
     <br>
-</form>
+
 
     <!-- Submit and Clear Button -->
     <div class="button">
         <input type="submit" value="Submit" class="btn btn-primary">
         <input type="reset" value="Clear" class="btn btn-secondary">
     </div>
+</form>
 </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+<script src="script/script.js"></script>
 </body>
 
 </html>
